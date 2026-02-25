@@ -1,12 +1,28 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { HeaderComponent } from './components/header/header.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { AccessoriesComponent } from './components/accessories/accessories.component';
+import { FeatureCardComponent } from './components/feature-card/feature-card.component';
+import { MagazineComponent } from './components/magazine/magazine.component';
+import { SupportComponent } from './components/support/support.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    HeaderComponent,
+    HeroComponent,
+    AccessoriesComponent,
+    FeatureCardComponent,
+    MagazineComponent,
+    SupportComponent,
+    FooterComponent
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('pwa');
+export class AppComponent {
+  title = 'pwa';
 }

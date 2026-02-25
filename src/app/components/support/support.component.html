@@ -1,0 +1,44 @@
+<section class="support-section">
+  <!-- Hero Banner -->
+  <div class="support-banner">
+    <div class="banner-content">
+      <p class="banner-subtitle">Any problems? We take care of everything.</p>
+      <h2 class="banner-title">We will find you the nearest repair<br>or maintenance solution</h2>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="support-features">
+    @for (feature of features; track feature.id) {
+      <div class="feature-item">
+        <div class="feature-icon">
+          @switch (feature.icon) {
+            @case ('assistance') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                <circle cx="12" cy="12" r="4"/>
+              </svg>
+            }
+            @case ('payment') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-3 1-3 2.5s1.5 2 3 2.5c1.5.5 3 1 3 2.5s-1.5 2.5-3 2.5c-1 0-2-.5-2.5-1.5"/>
+                <path d="M12 6v2m0 8v2"/>
+              </svg>
+            }
+            @case ('support') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 11l3 3L22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            }
+          }
+        </div>
+        <h3 class="feature-title">{{ feature.title }}</h3>
+        <p class="feature-description">
+          {{ feature.description }} <strong>{{ feature.highlight }}</strong>
+        </p>
+      </div>
+    }
+  </div>
+</section>

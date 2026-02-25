@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* --- VARIABLES GLOBALES --- */
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-dark: #1a1a1a;
+  --text-muted: #666;
+  --text-light: #888;
+  --accent: #667eea;
+  --accent-secondary: #764ba2;
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  timeline-scope: --s1, --s2, --s3, --s4, --s5, --s6;
+}
+
+/* --- ESTILOS BASE DEL SITIO --- */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg); 
+  color: var(--text-dark);
+  font-family: "Manrope", sans-serif;
+  
+  /* Permite que la página crezca para hacer scroll, pero ocupa mínimo la pantalla */
+  width: 100%;
+  min-height: 100vh; 
+  
+  /* Oculta la barra de scroll horizontal si algo se sale un poco */
+  overflow-x: hidden; 
+  -webkit-font-smoothing: antialiased;
+}

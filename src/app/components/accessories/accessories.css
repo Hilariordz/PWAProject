@@ -1,0 +1,60 @@
+.accessories-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 5%;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+/* --- Imágenes de Accesorios --- */
+.acc-img {
+  width: 12%; /* Ajusta este porcentaje para hacerlas más grandes o pequeñas */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.acc-img:hover {
+  transform: translateY(-10px); /* Pequeño efecto de salto al pasar el mouse */
+}
+
+/* --- Contenedor de Texto --- */
+.center-content {
+  text-align: center;
+  flex-shrink: 0;
+  padding: 0 40px;
+}
+
+.center-content h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 15px 0;
+  letter-spacing: -1.5px;
+  color: #000;
+}
+
+.center-content p {
+  font-size: 1.1rem;
+  color: #888;
+  margin: 0 0 30px 0;
+}
+
+/* --- Botón Discover --- */
+.btn-discover {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 50px; /* Hace el botón ovalado (forma de píldora) */
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-discover:hover {
+  background-color: #000;
+  color: #fff;
+}
